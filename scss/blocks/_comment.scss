@@ -1,0 +1,205 @@
+.comment {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../../img/Ellipse\ 2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  .container {
+    @include container();
+    background: #f5f8fc;
+    position: relative;
+    .brokers-coin {
+      position: absolute;
+      right: 20px;
+      top: -120px;
+      transform: rotate(260deg);
+    }
+    .comment-title {
+      text-align: center;
+      h2 {
+        @include h2();
+      }
+    }
+    .comment-block {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      &_card1 {
+        display: flex;
+        width: $width;
+        height: 114px;
+        background: #ffffff;
+        border-bottom: 1px solid rgba(212, 211, 220, 0.4);
+        border-radius: 30px;
+        align-items: center;
+        cursor: pointer;
+        &__text {
+          width: 80%;
+          margin-left: 80px;
+          h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 34px;
+          }
+        }
+        &__icon {
+          background: #f2f6fb;
+          width: 58px;
+          height: 58px;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &_card2 {
+        background: #ffffff;
+        border-radius: 30px;
+        width: $width;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        &__text {
+          width: 80%;
+          margin-left: 80px;
+          h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 34px;
+            margin-bottom: 15px;
+          }
+          p {
+            width: 80%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+            font-family: "Open Sans", sans-serif;
+          }
+        }
+        &__icon {
+          background: #f2f6fb;
+          width: 58px;
+          height: 58px;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .comment-block_card1__span {
+        color: #d4d3dc;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .comment {
+    width: 100%;
+    .container {
+      width: 100%;
+      .comment-title {
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .comment-block {
+        &_card1 {
+          height: 82px;
+          &__text {
+            h3 {
+              font-size: 16px;
+              line-height: 19px;
+            }
+          }
+          &__icon {
+            width: 35px;
+            height: 35px;
+          }
+        }
+        &_card2 {
+          height: 177px;
+          &__text {
+            h3 {
+              font-size: 16px;
+              line-height: 19px;
+            }
+            p {
+              width: 75%;
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          &__icon {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .comment {
+    width: 100%;
+    .container {
+      width: 100%;
+      .brokers-coin {
+        img {
+          width: 87.57px;
+          height: 89.53px;
+        }
+      }
+      .comment-title {
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .comment-block {
+        &_card1 {
+            height: 82px;
+          &__text {
+            width: 85%;
+            margin-left: 20px;
+            h3 {
+              font-size: 14px;
+              line-height: 17px;
+            }
+          }
+          &__icon {
+            width: 32px;
+            height: 32px;
+          }
+        }
+        &_card2 {
+            height: 291px;
+          &__text {
+            width: 85%;
+            margin-left: 20px;
+            h3 {
+                width: 75%;
+                font-size: 14px;
+                line-height: 20px;
+            }
+            p {
+              width: 90%;
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          &__icon {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}

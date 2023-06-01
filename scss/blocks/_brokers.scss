@@ -1,0 +1,202 @@
+.brokers {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-image: url(../../img/Ellipse\ 2.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  .container {
+    @include container();
+    height: 600px;
+    position: relative;
+
+    .brokers-coin {
+      position: absolute;
+      right: 20px;
+      top: -120px;
+      transform: rotate(260deg);
+    }
+
+    .brokers-title {
+      text-align: center;
+      h2 {
+        @include h2();
+      }
+    }
+    .brokers-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      li {
+        width: 400px;
+        height: 464px;
+        background: #ffffff;
+        border: 2px solid #f5f8fc;
+        border-radius: 28px;
+        text-align: center;
+        padding-top: 40px;
+        cursor: pointer;
+        p {
+          font-family: "Open Sans", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 160%;
+          color: #384454;
+          opacity: 0.7;
+          width: 72%;
+          margin: auto;
+          text-align: justify;
+        }
+        .brokers-list_img {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        .brokers-list_img3 {
+          margin-top: 80px;
+          margin-bottom: 50px;
+        }
+        .brokers-list_block1 {
+          margin-top: 85px;
+          width: $width;
+          height: 22px;
+          background: #317ac1;
+          border-radius: 0px 0px 30px 30px;
+        }
+        .brokers-list_block2 {
+          margin-top: 65px;
+          width: $width;
+          height: 22px;
+          background: #e1a624;
+          border-radius: 0px 0px 30px 30px;
+        }
+        .brokers-list_block3 {
+          margin-top: 70px;
+          width: $width;
+          height: 22px;
+          background: #384454;
+          border-radius: 0px 0px 30px 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .brokers {
+    width: 100%;
+    .container {
+      width: 100%;
+
+      .brokers-coin {
+        img {
+          width: 87.57px;
+          height: 89.53px;
+        }
+      }
+      .brokers-title {
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .brokers-list {
+        li {
+          width: 220px;
+          height: 374px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items:center;
+          p {
+            font-size: 12px;
+            line-height: 130%;
+          }
+          .brokers-list_img {
+            width: 148px;
+            height: 64px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+          }
+          .brokers-list_img3 {
+            width: 148px;
+            height: 64px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+          }
+          .brokers-list_block1 {
+            margin-top: 45px;
+         
+          }
+          .brokers-list_block2 {
+            margin-top: 14px;
+          
+          }
+          .brokers-list_block3 {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .brokers {
+    width: 100%;
+    .container {
+      width: 100%;
+      height: 980px;
+      .brokers-coin {
+        img {
+          width: 87.57px;
+          height: 89.53px;
+        }
+      }
+      .brokers-title {
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .brokers-list {
+        flex-direction: column;
+        gap: 20px;
+        li {
+          width: 288px;
+          height: 294px;
+      
+          p {
+            font-size: 12px;
+            line-height: 130%;
+          }
+          .brokers-list_img {
+            width: 148px;
+            height: 64px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+          .brokers-list_img3 {
+            width: 148px;
+            height: 64px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+          }
+          .brokers-list_block1 {
+            margin-top: 45.5px;
+         
+          }
+          .brokers-list_block2 {
+            margin-top: 15.3px;
+          
+          }
+          .brokers-list_block3 {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

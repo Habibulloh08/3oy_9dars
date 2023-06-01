@@ -1,0 +1,190 @@
+.footer {
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #384454;
+  .container {
+    @include container();
+    .footer-blocks {
+      display: flex;
+      list-style: none;
+      width: $width;
+      justify-content: space-between;
+      &_logo {
+        width: 20%;
+        cursor: pointer;
+      }
+      &_text {
+        width: 45%;
+        cursor: pointer;
+        p {
+          @include p();
+          color: #ffffff;
+          opacity: 0.8;
+        }
+      }
+      &_button {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        cursor: pointer;
+        &__btn1 {
+          width: $width;
+          height: 60px;
+          background: #77c613;
+          border-radius: 17px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border: none;
+          p {
+            @include p();
+            color: #ffffff;
+          }
+        }
+        &__btn2 {
+          width: $width;
+          height: 60px;
+          background: white;
+          border-radius: 17px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border: none;
+          p {
+            @include p();
+            color: #e1a624;
+          }
+        }
+        &__btn3 {
+          width: $width;
+          height: 60px;
+          background: #1da1f2;
+          border-radius: 17px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border: none;
+          p {
+            @include p();
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    width: 100%;
+    .container {
+      width: 100%;
+      .footer-blocks {
+        width: 100%;
+        justify-content: space-around;
+        &_logo {
+          width: 15%;
+          img {
+            width: 100.17px;
+            height: 57.77px;
+          }
+        }
+        &_text {
+          width: 40%;
+
+          p {
+            font-size: 10px;
+            line-height: 130%;
+          }
+        }
+        &_button {
+          width: 35%;
+          gap: 10px;
+          &__btn1 {
+            width: $width;
+
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          &__btn2 {
+            width: $width;
+
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          &__btn3 {
+            width: $width;
+
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 100%;
+    .container {
+      width: 100%;
+      .footer-blocks {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        &_logo {
+          width: 100%;
+          text-align: center;
+          img {
+            width: 187.31px;
+            height: 108.04px;
+          }
+        }
+        &_text {
+          width: 80%;
+
+          p {
+            font-size: 12px;
+            line-height: 130%;
+          }
+        }
+        &_button {
+          width: 75%;
+          gap: 10px;
+          cursor: pointer;
+          &__btn1 {
+            width: $width;
+            height: 55px;
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          &__btn2 {
+            width: $width;
+            height: 55px;
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          &__btn3 {
+            width: $width;
+            height: 55px;
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,225 @@
+.ressources {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  .container {
+    @include container();
+    .ressources-title {
+      text-align: center;
+      h2 {
+        @include h2();
+      }
+    }
+    .ressources-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      li {
+        width: 400px;
+        height: 474px;
+        background: #f5f8fc;
+        border: 2px solid #ffffff;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+
+        p {
+          @include p();
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 150%;
+          width: 75%;
+        }
+      }
+      li:hover {
+        img {
+          transform: scale(1.1);
+          transition: all ease-in 0.5s;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .ressources {
+    width: 100%;
+    .container {
+      width: 100%;
+      .ressources-title {
+        text-align: center;
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .ressources-list {
+        li {
+          width: 216px;
+          height: 312px;
+          img {
+            width: 100%;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .ressources {
+    width: 100%;
+    .container {
+      width: 100%;
+      .ressources-title {
+        text-align: center;
+        h2 {
+          font-size: 26px;
+          line-height: 31px;
+        }
+      }
+      .ressources-list {
+        flex-direction: column;
+        gap: 20px;
+        li {
+          width: 216px;
+          height: 312px;
+          img {
+            width: 100%;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ressources {
+    width: 100%;
+    .container {
+      width: 100%;
+      .ressources-title {
+        h2 {
+          font-size: 2px;
+          line-height: 31px;
+        }
+      }
+      .ressources-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        li {
+          width: 400px;
+          height: 474px;
+          background: #f5f8fc;
+          border: 2px solid #ffffff;
+          border-radius: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 50px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          img {
+            width: 100%;
+          }
+
+          p {
+            @include p();
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 150%;
+            width: 75%;
+          }
+        }
+        li:hover {
+          img {
+            transform: scale(1.1);
+            transition: all ease-in 0.5s;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .ressources {
+      width: 100%;
+      .container {
+        width: 100%;
+        .ressources-title {
+          text-align: center;
+          h2 {
+            font-size: 26px;
+            line-height: 31px;
+          }
+        }
+        .ressources-list {
+          li {
+            width: 216px;
+            height: 312px;
+            img {
+              width: 100%;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .ressources {
+      width: 100%;
+      .container {
+        width: 100%;
+        .ressources-title {
+          text-align: center;
+          h2 {
+            font-size: 26px;
+            line-height: 31px;
+          }
+        }
+        .ressources-list {
+          flex-direction: column;
+          gap: 20px;
+          li {
+            width: 216px;
+            height: 312px;
+            img {
+              width: 100%;
+            }
+
+            p {
+              font-size: 14px;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

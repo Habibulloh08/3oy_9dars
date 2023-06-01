@@ -1,0 +1,147 @@
+.hero {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  .container {
+    @include container();
+    .hero-blocks {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      &_card1 {
+        width: 50%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__title {
+          @include h2();
+        }
+        &__subtitle {
+          @include p();
+          width: 80%;
+        }
+        &__button {
+          display: flex;
+          gap: 10px;
+          &--btn1 {
+            @include btn();
+            height: 60px;
+            font-family: "RF Dewi Extended";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          &--btn2 {
+            width: 238px;
+            height: 60px;
+            left: 562px;
+            top: 548px;
+            background: #ffffff;
+            border: 2px solid #77c613;
+            border-radius: 17px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
+            color: #77c613;
+            cursor: pointer;
+          }
+        }
+      }
+      &_card2 {
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero {
+    width: 100%;
+    .container {
+      width: 100%;
+      .hero-blocks {
+        width: 100%;
+        &_card1 {
+          &__title {
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size: 25px;
+            line-height: 35px;
+          }
+          &__subtitle {
+            font-size: 15px;
+            line-height: 150%;
+          }
+          &__button {
+            flex-direction: column;
+            &--btn1 {
+              width: 274px;
+              height: 48px;
+            }
+            &--btn2 {
+              width: 274px;
+              height: 48px;
+            }
+          }
+        }
+        &_card2 {
+          &__img {
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100%;
+    .container {
+      width: 100%;
+      .hero-blocks {
+        width: 100%;
+        flex-direction: column-reverse;
+        &_card1 {
+          width: 100%;
+
+          &__title {
+            font-weight: 800;
+            letter-spacing: 1.4px;
+            font-size: 27px;
+            line-height: 35px;
+            width: 100%;
+          }
+          &__subtitle {
+            width: 100%;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+          }
+          &__button {
+            flex-direction: column;
+            align-items:center;
+            &--btn1 {
+              width: 287px;
+              height: 48px;
+            }
+            &--btn2 {
+              width: 287px;
+              height: 48px;
+            }
+          }
+        }
+        &_card2 {
+          width: 100%;
+          text-align: center;
+          &__img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

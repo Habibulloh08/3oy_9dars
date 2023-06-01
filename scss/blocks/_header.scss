@@ -1,0 +1,119 @@
+@import "../global.scss";
+.header {
+  margin: 0 auto;
+  .container {
+    @include container();
+    .header-nav {
+      border-bottom: 3px solid#F5F8FC;
+      width: $width;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &_logo {
+        width: 18%;
+        cursor: pointer;
+      }
+      &_list {
+        width: 55%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+        }
+      }
+      &_button {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        &__btn {
+          @include btn();
+          color: white;
+          cursor: pointer;
+        }
+        &__btn2 {
+          width: 48px;
+          height: 48px;
+          background: #ffffff;
+          border: 2px solid #f5f8fc;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+        &__catalog {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+    .container {
+      width: 100%;
+      .header-nav {
+        width: 100%;
+        &_logo {
+          width: 40%;
+        }
+        &_list {
+          display: none;
+        }
+        &_button {
+          width: 60%;
+          &__catalog {
+            display: block;
+            width: 100px;
+            height: 48px;
+            background: #ffffff;
+            border: 2px solid #f5f8fc;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    width: 100%;
+    .container {
+      width: 100%;
+
+      .header-nav {
+        width: 100%;
+        &_logo {
+          width: 80%;
+        }
+        &_list {
+          display: none;
+        }
+        &_button {
+          width: 20%;
+          &__btn {
+            display: none;
+          }
+          &__btn2 {
+            width: 40px;
+            height: 40px;
+          }
+          &__catalog {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            border: 2px solid #f5f8fc;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
